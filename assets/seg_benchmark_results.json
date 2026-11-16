@@ -1,0 +1,29 @@
+{
+  "U-Net (ResNet34)": {
+    "binary_iou": 0.3586,
+    "binary_dice": 0.5279,
+    "physical_iou": 0.1291,
+    "electrical_iou": 0.2142,
+    "birddrop_iou": 0.7405,
+    "latency_ms": 8.05,
+    "size_mb": 93.4
+  },
+  "DINO ViT-B Decoder": {
+    "binary_iou": 0.3291,
+    "binary_dice": 0.4953,
+    "physical_iou": 0.0767,
+    "electrical_iou": 0.1563,
+    "birddrop_iou": 0.7237,
+    "latency_ms": 14.51,
+    "size_mb": 335.5
+  },
+  "HQ-SAM (ViT-B Box-Prompt)": {
+    "binary_iou": 0.7274,
+    "binary_dice": 0.8422,
+    "physical_iou": 0.7265,
+    "electrical_iou": 0.4805,
+    "birddrop_iou": 0.8557,
+    "latency_ms": 106.44,
+    "size_mb": 361.8
+  }
+}

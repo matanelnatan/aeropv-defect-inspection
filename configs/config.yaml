@@ -1,0 +1,38 @@
+project:
+  name: aeropv-defect-inspection
+  seed: 42
+
+classes:
+  classification:
+    - Bird-drop
+    - Clean
+    - Dusty
+    - Electrical-damage
+    - Physical-Damage
+  segmentation:
+    0: Background
+    1: Physical-Damage
+    2: Electrical-damage
+    3: Bird-drop
+
+preprocessing:
+  border_threshold: 12
+  laplacian_blur_min_var: 65.0
+  openclip_model: ViT-B-32
+  openclip_pretrained: openai
+  dedup_cosine_threshold: 0.965
+
+calibration_and_routing:
+  temperature_T: 1.0217
+  healthy_classes:
+    - Clean
+    - Dusty
+  early_exit_healthy_prob_threshold: 0.85
+
+tracking_and_severity:
+  max_frame_gap: 6
+  min_iou_match: 0.12
+  min_confirmed_area_pct: 0.05
+  severity_thresholds_pct:
+    medium: 1.5
+    high: 5.0

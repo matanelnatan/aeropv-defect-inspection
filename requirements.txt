@@ -1,0 +1,17 @@
+torch>=2.1.0
+torchvision>=0.16.0
+timm>=0.9.12
+segmentation-models-pytorch>=0.3.3
+albumentations>=1.4.0
+opencv-python-headless>=4.9.0
+onnx>=1.15.0
+onnxruntime>=1.17.0
+open-clip-torch>=2.24.0
+scikit-learn>=1.4.0
+numpy>=1.26.0
+Pillow>=10.2.0
+matplotlib>=3.8.0
+imageio>=2.34.0
+PyYAML>=6.0.1
+gradio>=4.20.0
+pytest>=8.0.0

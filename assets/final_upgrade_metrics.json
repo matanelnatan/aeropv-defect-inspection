@@ -1,0 +1,113 @@
+{
+  "distillation": {
+    "baseline": {
+      "bin_iou": 0.35863658648649416,
+      "phys_iou": 0.12912787626253547,
+      "elec_iou": 0.2141759083040664,
+      "bird_iou": 0.7405022261034626,
+      "neg_spec": 0.9999999999999615
+    },
+    "distilled": {
+      "bin_iou": 0.30900683310474264,
+      "phys_iou": 0.10215034965034155,
+      "elec_iou": 0.040538561464964686,
+      "bird_iou": 0.8039728126935274,
+      "neg_spec": 0.9706531053870725
+    },
+    "promoted": false,
+    "pseudo_counts": {
+      "1": 86,
+      "2": 60,
+      "3": 45
+    }
+  },
+  "calibration": {
+    "temperature": 1.0217264890670776,
+    "ece_before": 0.04287050070153814,
+    "ece_after": 0.042516339299764616,
+    "naive_recall": 100.0,
+    "naive_skip": 39.24050632911392,
+    "safe_recall": 100.0,
+    "safe_skip": 39.24050632911392
+  },
+  "static_int8": {
+    "cls_acc": 93.67088607594937,
+    "cls_f1": 0.9379450038273568,
+    "cls_lat_ms": 39.4047220000175,
+    "cls_size_mb": 27.199393272399902,
+    "seg_bin_iou": 0.3525751533021509,
+    "seg_lat_ms": 92.48972639996282,
+    "seg_size_mb": 23.57929801940918
+  },
+  "video_tracking": {
+    "mean_latency_ms": 27.420021301923214,
+    "fps": 36.469701791583255,
+    "skip_pct": 20.37037037037037,
+    "unique_defects": 7,
+    "events": [
+      {
+        "defect_id": "PV-DEF-01",
+        "defect_type": "Bird-drop",
+        "timestamp_sec": "0.9s - 1.0s",
+        "frames_observed": 2,
+        "peak_affected_area_pct": 0.0,
+        "peak_calibrated_confidence_pct": 9.3,
+        "maintenance_severity": "LOW"
+      },
+      {
+        "defect_id": "PV-DEF-02",
+        "defect_type": "Bird-drop",
+        "timestamp_sec": "1.3s - 1.7s",
+        "frames_observed": 5,
+        "peak_affected_area_pct": 0.0,
+        "peak_calibrated_confidence_pct": 17.6,
+        "maintenance_severity": "LOW"
+      },
+      {
+        "defect_id": "PV-DEF-03",
+        "defect_type": "Bird-drop",
+        "timestamp_sec": "1.8s - 1.8s",
+        "frames_observed": 1,
+        "peak_affected_area_pct": 0.03,
+        "peak_calibrated_confidence_pct": 20.0,
+        "maintenance_severity": "LOW"
+      },
+      {
+        "defect_id": "PV-DEF-04",
+        "defect_type": "Physical-Damage",
+        "timestamp_sec": "1.9s - 2.2s",
+        "frames_observed": 3,
+        "peak_affected_area_pct": 0.0,
+        "peak_calibrated_confidence_pct": 60.5,
+        "maintenance_severity": "LOW"
+      },
+      {
+        "defect_id": "PV-DEF-05",
+        "defect_type": "Bird-drop",
+        "timestamp_sec": "2.0s - 2.0s",
+        "frames_observed": 1,
+        "peak_affected_area_pct": 0.0,
+        "peak_calibrated_confidence_pct": 18.4,
+        "maintenance_severity": "LOW"
+      },
+      {
+        "defect_id": "PV-DEF-06",
+        "defect_type": "Physical-Damage",
+        "timestamp_sec": "2.3s - 5.2s",
+        "frames_observed": 30,
+        "peak_affected_area_pct": 6.53,
+        "peak_calibrated_confidence_pct": 95.8,
+        "maintenance_severity": "HIGH"
+      },
+      {
+        "defect_id": "PV-DEF-07",
+        "defect_type": "Physical-Damage",
+        "timestamp_sec": "5.3s - 5.3s",
+        "frames_observed": 1,
+        "peak_affected_area_pct": 2.36,
+        "peak_calibrated_confidence_pct": 32.7,
+        "maintenance_severity": "MEDIUM"
+      }
+    ]
+  }
+}

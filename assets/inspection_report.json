@@ -1,0 +1,27 @@
+{
+  "video_source": "video_defect_01.mp4",
+  "calibration_temperature_T": 1.0217,
+  "early_exit_policy": "Calibrated P(Clean+Dusty) >= 0.85",
+  "processed_frames": 54,
+  "unique_defects_detected": 2,
+  "defect_events": [
+    {
+      "defect_id": "PV-DEF-01",
+      "defect_type": "Physical-Damage",
+      "timestamp_sec": "2.3s - 5.2s",
+      "frames_observed": 30,
+      "peak_affected_area_pct": 6.53,
+      "peak_calibrated_confidence_pct": 95.8,
+      "maintenance_severity": "HIGH"
+    },
+    {
+      "defect_id": "PV-DEF-02",
+      "defect_type": "Physical-Damage",
+      "timestamp_sec": "5.3s - 5.3s",
+      "frames_observed": 1,
+      "peak_affected_area_pct": 2.36,
+      "peak_calibrated_confidence_pct": 32.7,
+      "maintenance_severity": "MEDIUM"
+    }
+  ]
+}
