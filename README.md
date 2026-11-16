@@ -62,6 +62,16 @@ Raw Drone Frame (RGB)
 4. **Hard-Negative Background Integration:** Incorporates `24` verified clean/dusty frames (`0` defect pixels) into the segmentation dataset (`133` total images) to suppress false-positive masks (`100.0%` clean-panel specificity).
 
 ---
+### Data Sources & Attribution
+* **Base Image Dataset:** [PV Panel Defect Dataset (Kaggle)](https://www.kaggle.com/datasets/alicjalena/pv-panel-defect-dataset) — utilized 5 operational classes (`Bird-drop`, `Clean`, `Dusty`, `Electrical-damage`, `Physical-Damage`), excluding `Snow-Covered` samples to match target deployment environments.
+* **Aerial Defect Video Sources (Trimmed & Deduplicated):**
+  * [Aerial PV Defect Inspection Clip 1 (YouTube Shorts)](https://www.youtube.com/shorts/4P4ocvlSnBw) — trimmed to relevant active panel inspection segments.
+  * [Aerial PV Defect Inspection Clip 2 (YouTube)](https://www.youtube.com/watch?v=KqNlmOo3WA8) — trimmed to relevant active panel inspection segments.
+* **Healthy / Clean Aerial Drone Video Sources (Hard-Negative & Triage Evaluation):**
+  * [Drone View of Solar Panel Array in Sunny Field (Pexels)](https://www.pexels.com/video/drone-view-of-solar-panel-array-in-sunny-field-37478242/)
+  * [Solar Panels on Field Drone Footage (Pexels)](https://www.pexels.com/video/solar-panels-on-field-drone-footage-14067718/)
+  * [Drone Footage of Solar Panels in a Parking Lot (Pexels)](https://www.pexels.com/video/drone-footage-of-solar-panels-in-a-parking-lot-9790073/)
+  * [Solar Panels Renewable Energy Aerial Footage (Pixabay)](https://pixabay.com/videos/solar-panels-energy-renewable-72837)
 
 ## 3. Experimental Benchmarks & Engineering Ablations
 
